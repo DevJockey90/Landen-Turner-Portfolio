@@ -2553,7 +2553,7 @@ input, select, textarea {
 	.image {
 		display: inline-block;
 		position: relative;
-		border: 0;
+		border: 2px solid rgb(185, 177, 177);
 	}
 
 		.image[data-position] img {
@@ -2666,6 +2666,7 @@ input, select, textarea {
 
 		.image.left, .image.right {
 			max-width: 40%;
+			height: 500px;
 		}
 
 			.image.left img, .image.right img {
@@ -2715,7 +2716,7 @@ input, select, textarea {
 				top: 0;
 				left: 0;
 				width: 100%;
-				height: 100%;
+				height:100%;
 				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(113, 172, 160, 0.25), rgba(239, 194, 120, 0.25));
 			}
 
@@ -3046,9 +3047,11 @@ input, select, textarea {
 
 	.banner {
 		color: #ffffff;
-		padding: 12rem 6rem 10rem 6rem ;
+		padding: 12rem 6rem 10rem 6rem;
 		cursor: default;
 		position: relative;
+		height: 70vh;
+		top: 0;
 		text-align: center;
 	}
 
@@ -3181,6 +3184,7 @@ input, select, textarea {
 		}
 
 		.banner .image {
+			
 			pointer-events: none;
 			position: absolute;
 			top: 0;
@@ -3197,7 +3201,7 @@ input, select, textarea {
 				-ms-transition: opacity 1.3125s ease-in-out;
 				transition: opacity 1.3125s ease-in-out;
 				content: '';
-				display: block;
+				display: inline-block;
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -3214,7 +3218,7 @@ input, select, textarea {
 				-ms-transition: opacity 1.3125s ease-in-out;
 				transition: opacity 1.3125s ease-in-out;
 				content: '';
-				display: block;
+				display: inline-block;
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -3342,7 +3346,7 @@ input, select, textarea {
 	padding: 10px;
    align-items:center;
 	text-align:center;
-	border: 2px solid black;
+	
   }
 
   .carousel-item i {
@@ -3502,6 +3506,7 @@ input, select, textarea {
 /* Posts */
 
 	.posts {
+		
 		width: 100%;
 		margin: 0 0 2rem 0;
 		display: -moz-flex;
@@ -3579,6 +3584,10 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.posts {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 10px;
 				-moz-justify-content: center;
 				-webkit-justify-content: center;
 				-ms-justify-content: center;
@@ -4695,7 +4704,7 @@ input, select, textarea {
 			-ms-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;
 			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-			display: block;
+			display: inline-block;
 			position: absolute;
 			top: 0;
 			right: 0;
